@@ -2,6 +2,8 @@ var 'firstName' = Vince
 var 'lastName' = Saykao
 var 'fullName' = firstName + lastName
 
+blah
+
 console.log('fullName');// REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
 
