@@ -33,6 +33,7 @@ if (pets <= allowedPets) {
   console.log('I have enough pets');
 }
 
+// stretch 16
 else if (pets >= allowedPets) {
   console.log('Oh no, I have too many pets!');
 }
@@ -41,6 +42,8 @@ else if (mostPets <= allowedPets) {
 } else {
   console.log('weird');
 }
+
+
 
 
 // REQUIRED FEATURES:
