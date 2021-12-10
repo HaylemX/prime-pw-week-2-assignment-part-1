@@ -15,12 +15,34 @@ var food = 'pasta'
 var pets = 2
 var friendsPets = 2
 const allowedPets = 100
+var mostPets = (pets + friendsPets);
 
 if (adventurous == true) {
   console.log('Adventures are great!');
 } else {
   console.log('How about we stay home?');
 }
+
+if (luckyNumber == 2 && adventurous == true) {
+  console.log('Roll the dice!');
+}
+
+if (pets <= allowedPets) {
+  console.log('I can have more pets!');
+} else if (pets == allowedPets){
+  console.log('I have enough pets');
+}
+
+else if (pets >= allowedPets) {
+  console.log('Oh no, I have too many pets!');
+}
+else if (mostPets <= allowedPets) {
+  console.log('Nice');
+} else {
+  console.log('weird');
+}
+
+
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
 
@@ -51,19 +73,6 @@ if (adventurous == true) {
 
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
-
-if (luckyNumber == 2 && adventurous == true) {
-  console.log('Roll the dice!');
-}
-
-if (pets <= allowedPets) {
-  console.log('I can have more pets!');
-} else if (pets == allowedPets){
-  console.log('I have enough pets');
-}
-else if (pets >= allowedPets) {
-  console.log('Oh no, I have too many pets!');
-}
 
 
 
