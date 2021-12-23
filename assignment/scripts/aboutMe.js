@@ -12,10 +12,11 @@ console.log('My name is ' + fullName + ', and I think ' + luckyNumber + ' is a w
 
 let adventurous = true
 let food = 'pasta'
-let pets = 2
+let pets = 0
 let friendsPets = 2
 const allowedPets = 100
 let mostPets = (pets + friendsPets);
+pets = pets + 2
 
 if (adventurous === true) {
   console.log('Adventures are great!');
