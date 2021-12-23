@@ -16,7 +16,7 @@ let pets = 0
 let friendsPets = 2
 const allowedPets = 100
 let mostPets = (pets + friendsPets);
-pets = pets + 2
+pets = pets += 2
 
 if (adventurous === true) {
   console.log('Adventures are great!');
