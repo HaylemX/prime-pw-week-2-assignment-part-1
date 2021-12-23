@@ -1,48 +1,62 @@
-var firstName = 'Vince'
-var lastName = 'Saykao'
-var fullName = (firstName +' '+ lastName);
+const firstName = 'Vince'
+const lastName = 'Saykao'
+let fullName = (firstName +' '+ lastName);
 
 console.log(fullName);
 
-var luckyNumber = 21
+let luckyNumber = 21
 
 console.log(luckyNumber);
 
 console.log('My name is ' + fullName + ', and I think ' + luckyNumber + ' is a winner!')
 
-var adventurous = true
-var food = 'pasta'
-var pets = 2
-var friendsPets = 2
+let adventurous = true
+let food = 'pasta'
+let pets = 2
+let friendsPets = 2
 const allowedPets = 100
-var mostPets = (pets + friendsPets);
+let mostPets = (pets + friendsPets);
 
-if (adventurous == true) {
+if (adventurous === true) {
   console.log('Adventures are great!');
 } else {
   console.log('How about we stay home?');
 }
 
-if (luckyNumber == 2 && adventurous == true) {
+if (luckyNumber === 2 && adventurous === true) {
   console.log('Roll the dice!');
 }
 
-if (pets <= allowedPets) {
+if (pets < allowedPets) {
   console.log('I can have more pets!');
-} else if (pets == allowedPets){
+} else if (pets === allowedPets){
   console.log('I have enough pets');
-}
-
-// stretch 16
-else if (pets >= allowedPets) {
+} else if (pets > allowedPets) {
   console.log('Oh no, I have too many pets!');
 }
-else if (mostPets <= allowedPets) {
+
+// stretch 15
+else if (pets > allowedPets) {
+  console.log('Oh no, I have too many pets!');
+}
+else if (mostPets < allowedPets) {
   console.log('Nice');
-} else {
-  console.log('weird');
+} else if (mostPets > allowedPets) {
+  console.log('Weird');
 }
 
+// stretch 16 Practice Attempt
+switch (new pets().allowedPets) {
+  case 0:
+  break;
+  allowedPets: 'Oh no, I have too many pets!';
+  case 1:
+  allowedPets: 'Nice';
+  break;
+  case 2:
+  allowedPets: 'Weird';
+}
+document.getElementById('demo').innerHTML = 'Sorry' + allowedPets;
 
 
 
@@ -97,6 +111,12 @@ else if (mostPets <= allowedPets) {
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
 
+
+
+
+
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+
+
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
