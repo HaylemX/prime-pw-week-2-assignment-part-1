@@ -36,7 +36,7 @@ if (pets < allowedPets) {
   console.log('Oh no, I have too many pets!');
 }
 
-// stretch 15
+// stretch 16
 else if (pets > allowedPets) {
   console.log('Oh no, I have too many pets!');
 }
@@ -46,19 +46,29 @@ else if (mostPets < allowedPets) {
   console.log('Weird');
 }
 
-// stretch 16 Practice Attempt
-switch (new pets().allowedPets) {
+// stretch 17
+let allowed;
+switch (new Date().getDay()) {
   case 0:
-  break;
-  allowedPets: 'Oh no, I have too many pets!';
+   allowed = 'Oh no, I have too many pets!';
+    break;
   case 1:
-  allowedPets: 'Nice';
-  break;
+    allowed = 'I have enough pets';
+    break;
   case 2:
-  allowedPets: 'Weird';
+    allowed = 'Oh no, I have too many pets!';
 }
-document.getElementById('demo').innerHTML = 'Sorry' + allowedPets;
+document.getElementById("allowedpets").innerHTML = "Sorry! " + allowed;
 
+// stretch 18
+
+if (pets && mostPets < allowedPets) {
+  console.log('I can have more pets!');
+} else if (pets || mostPets === allowedPets){
+  console.log('I have enough pets');
+} else if (pets && mostPets > allowedPets) {
+  console.log('Oh no, I have too many pets!');
+}
 
 
 // REQUIRED FEATURES:
